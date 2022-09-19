@@ -80,9 +80,7 @@ public class Silly implements Comparable<Silly>{
      * @param second the second half of this Silly instance's name.
      */
     public Silly(String first, String second){
-        StringBuilder concatenateName = new StringBuilder(first);
-        concatenateName.append(second);
-        this.name = concatenateName.toString();
+        this.name = first + second;
     }
 
     public static void main(String[] args) {
