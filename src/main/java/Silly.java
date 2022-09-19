@@ -82,7 +82,7 @@ public class Silly implements Comparable<Silly>{
     public Silly(String first, String second){
         StringBuilder concatenateName = new StringBuilder(first);
         concatenateName.append(second);
-        this.name = new String(concatenateName);
+        this.name = concatenateName.toString();
     }
 
     public static void main(String[] args) {
@@ -128,7 +128,7 @@ public class Silly implements Comparable<Silly>{
      */
     @Override
     public String toString(){
-        // TODO (Task 3): Implement the body of this method!
+        return name;
     }
 
     /**
