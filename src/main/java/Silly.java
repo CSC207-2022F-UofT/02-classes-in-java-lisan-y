@@ -73,16 +73,17 @@ public class Silly implements Comparable<Silly>{
     }
 
     /**
-     * TODO (Task 1): Create another constructor that takes in TWO parameters,
-     *       both of which are strings.
-     *       Afterwards, set this.name to the concatenation of both
-     *       strings (e.g. this.name = [first string] + [second string]).
-     *       Make sure you document this method!
+     * Creates a new Silly object.
+     * This constructor takes in 2 Strings as arguments.
+     *
+     * @param first the first half of this Silly instance's name.
+     * @param second the second half of this Silly instance's name.
      */
-
-
-
-
+    public Silly(String first, String second){
+        StringBuilder concatenateName = new StringBuilder(first);
+        concatenateName.append(second);
+        this.name = new String(concatenateName);
+    }
 
     public static void main(String[] args) {
         /**
