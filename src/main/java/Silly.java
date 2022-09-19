@@ -143,17 +143,16 @@ public class Silly implements Comparable<Silly>{
      */
     @Override
     public boolean equals(Object o) {
-        /**
-         * TODO (Task 4): Complete the body of this method!
-         *                We've started it by checking the type of o for you.
-         *                You just need to return true if the names are equal.
-         */
+
         if (!(o instanceof Silly)){
             return false;
         }
 
         Silly other = (Silly) o; // To access .name of o, we need to cast it.
-
+        if (other.name.equals(this.name)) {
+            return true;
+        }
+        return false;
         // Hint: to compare strings, we need to use .equals()
         //       e.g. s1.equals(s2)
     }
